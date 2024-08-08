@@ -1,26 +1,142 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    }
-    
+@font-face {
+    font-family: centuryGothic;
+    src: url(centurygothic.ttf);
+  }
 
-#inner{
+
+body{
+    color: hsl(0, 0%, 80%);
+    font-family: centuryGothic;
     display: flex;
-    gap: 50px;
-    background-color: red;
-    padding: 0;
-    margin: 0;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #1D1D1D;
 }
 
-#channelContainer{
+#channelList{
+    padding-left: 0px;
+    list-style-type: none;
+}
 
-    height: 100%;
-    background-color: blue;
+#channelList>li{
+    transition: 0.2s;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#channelList>li:hover{
+    transition: 0.2s;
+    background-color: hsl(0,0%,30%);
+}
+
+
+#inner{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 13%);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height:80vh;
+    width: 90vw;
+}
+
+#channelContainer{  
+    padding-right: 10px;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color:hsl(0, 0%, 23%);
+    height: 95%;
 }
 
 #messagesContainer{
-    background-color: green;
-    height: 100%;
+    border-radius: 5px;
+    background-color:hsl(0, 0%, 17%);
+    padding: 0px;
+    height: 95%;
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+}
+
+
+#channelInfo{
+    background-color: hsl(0,0%,20%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding:10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#channelInfo .left{
+    font-size: 30px;
+}
+
+.channelInfoButtons{
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: hsl(0,0%,25%);
+}
+
+.channelInfoButtons:hover{
+    transition: 0.2s;
+    background-color: hsl(0,0%,35%);
+}
+
+.right{
+    
+    gap: 10px;
+    display: flex;
+}
+
+#messageInputContainer{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: hsl(0,0%,25%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#messageBoxInput{
+    background-color: hsl(0,0%,20%);
+    border-bottom-left-radius: 5px;
+    box-shadow: none;
+    border: none;
+}
+
+#messageBoxInput:hover{
+    border: none;
+    box-shadow: none;
+}
+
+#messageBoxInput:focus{
+    border:none;
+    box-shadow: none;
+    outline: none;
+}
+
+#messageBoxButton{
+    background-color: hsl(0, 0%,25%);
+    border-bottom-right-radius: 5px;
+    box-shadow: none;
+    border: none;
+}
+
+.textBox{
+    
+    flex-grow: 0;
+    background-color: blue;
+    width: ;
+}
+
+#messages{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
 }

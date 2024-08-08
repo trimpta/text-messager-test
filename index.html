@@ -10,6 +10,7 @@
     <div id="inner">
 
         <div id="channelContainer">
+            <h1>Channels</h1>
             <ul id="channelList">
                 <li>
                     contact 1
@@ -24,21 +25,21 @@
             <div id="channelInfo">
                 <div class="left">Channel name</div> 
                 <div class="right">
-                    <div id="addUser">add contact</div>
-                    <div id="changeChannelName">change channel name</div>
+                    <div id="addUser" class="channelInfoButtons">add contact</div>
+                    <div id="changeChannelName" class="channelInfoButtons">change name</div>
                 </div>
             </div>
 
             <div id="messages">
-                <ul id="messageList">
-                    <li>ryan gosling:hi</li>
-                    <li>me:hiiiiiiiiiiiii</li>
-                </ul>
+                <div class="textBox">
+                    <h2>person 1</h2>
+                    <p>hello</p>
+                </div>
             </div>
 
             <div id="messageInputContainer">
                 <input type="text" name="messageBox" id="messageBoxInput" class="messageBox">
-                <button class="messageBox">send message</button>
+                <button id="messageBoxButton" class="messageBox">send message</button>
             </div>
         </div>
 
