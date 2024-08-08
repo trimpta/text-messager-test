@@ -1,0 +1,20 @@
+#inner{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: red;
+    padding: none;
+}
+
+#channelContainer{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100%;
+    background-color: blue;
+}
+
+#messagesContainer{
+    background-color: green;
+}
