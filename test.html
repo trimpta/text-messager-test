@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            display: flex;
+            width: 50vw;
+            background-color: blue;
+            flex-direction: column;
+            align-items: flex-end;
+        }
 
+        #blue{
+            align-self:flex-start;
+        }
     </style>
 </head>
 <body>
-    <div id="h">
-        
-    <div>
+    <div>green</div>
+    <div id="blue">blue</div>
+    <div>yello</div>
 
     <script>
         document.getElementById('h').appendChild(document.createElement('p').innerHTML='hi')

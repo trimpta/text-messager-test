@@ -175,13 +175,22 @@ h3{
     color: hsl(0,0%,50%);
 }
 
+.userMessages{
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0px;
+    align-self: flex-end;
+}
+
 #messages{
     list-style-type: none;
     display: flex;
     gap: 10px;
-    overflow-y: auto;
     flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
     padding-left: 10px;
     padding-bottom: 10px;
 }
+
+
 

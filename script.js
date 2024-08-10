@@ -1,8 +1,9 @@
 document.getElementById('messageBoxButton').onclick=submitFunction;
 
 function submitFunction(){
-
+    
     const message = document.getElementById('messageBoxInput').value;
+    if (message.value != ''){
     document.getElementById('messageBoxInput').value='';
     const liChild = document.createElement('li');
 
@@ -16,6 +17,6 @@ function submitFunction(){
     liChild.classList.add('textBox')
 
     document.getElementById('messages').appendChild(liChild)
-
+}
 
 }
