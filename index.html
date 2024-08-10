@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href = 'style.css'>
+
 </head>
 <body>
 
@@ -30,22 +31,25 @@
                 </div>
             </div>
 
-            <div id="messages">
-                <div class="textBox">
+            <ul id="messages">
+                <li class="textBox">
                     <p>person 1</p>
                     <h3>hello</h2>
-                </div>
-                <div class="textBox">
+                </li>
+                <li class="textBox">
                     <p>person 2</p>
                     <h3>hello how are you </h2>
-                </div>
-            </div>
+                </li>
+            </ul>
 
             <div id="messageInputContainer">
-                <input type="text" name="messageBox" id="messageBoxInput" class="messageBox">
+                <input type="text" name="messageBox" id="messageBoxInput" class="messageBox" autocomplete="off">
                 <button id="messageBoxButton" class="messageBox">send message</button>
             </div>
         </div>
+
+
+        <script src="script.js"></script>
 
 </body>
 </html>

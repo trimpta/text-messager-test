@@ -23,7 +23,7 @@ body{
 #channelList>li{
     transition: 0.2s;
     border-radius: 7px;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 30px;
     margin-bottom: 10px;
     padding: 10px;
@@ -41,6 +41,7 @@ body{
     padding-left: 10px;
 
     background-color:hsl(0, 0%, 23%);
+    
     height: 100%;
 }
 
@@ -53,6 +54,7 @@ body{
     background-color:hsl(0, 0%, 17%);
     padding: 0px;
     height: 100%;
+    max-height: 100%;
     display: grid;
     grid-template-rows: 1fr 7fr 1fr;
 }
@@ -60,6 +62,7 @@ body{
 
 #channelInfo{
     background-color: hsl(0,0%,20%);
+    
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     padding:10px;
@@ -107,6 +110,7 @@ body{
     background-color: hsl(0,0%,20%);
     box-shadow: none;
     border: none;
+    color: white;
 }
 
 #messageBoxInput:hover{
@@ -123,6 +127,7 @@ body{
 }
 
 #messageBoxButton{
+    color: white;
     font-size: 27px;
     font-family: centuryGothic;
     transition: 0.2s;
@@ -134,11 +139,11 @@ body{
 
 #messageBoxButton:hover{
     transition: 0.2s;
-    background-color: hsl(0,0%,60%);
+    background-color: hsl(0,0%,25%);
 }
 
 #messageBoxButton:active{
-    background-color: hsl(0,0%,90%);
+    background-color: hsl(0,0%,30%);
 }
 
 .textBox{
@@ -171,9 +176,11 @@ h3{
 }
 
 #messages{
+    list-style-type: none;
     display: flex;
     gap: 10px;
-    flex-direction: column-reverse;
+    overflow-y: auto;
+    flex-direction: column;
     padding-left: 10px;
     padding-bottom: 10px;
 }
