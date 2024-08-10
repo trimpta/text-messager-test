@@ -5,13 +5,14 @@
 
 
 body{
+    margin: 0;
+    padding: 0;
     color: hsl(0, 0%, 80%);
     font-family: centuryGothic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     background-color: #1D1D1D;
+    height: 100vh;
 }
 
 #channelList{
@@ -21,8 +22,9 @@ body{
 
 #channelList>li{
     transition: 0.2s;
-    border-radius: 5px;
-    font-size: 20px;
+    border-radius: 7px;
+    font-weight: 900;
+    font-size: 30px;
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -33,30 +35,24 @@ body{
 }
 
 
-#inner{
-    padding: 10px;
-    border-radius: 5px;
-    background-color: hsl(0, 0%, 13%);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    height:80vh;
-    width: 90vw;
-}
 
 #channelContainer{  
     padding-right: 10px;
     padding-left: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+
     background-color:hsl(0, 0%, 23%);
-    height: 95%;
+    height: 100%;
+}
+
+#channelContainer h1{
+    color: hsl(0,0%,50%);
 }
 
 #messagesContainer{
-    border-radius: 5px;
+    border-radius: 7px;
     background-color:hsl(0, 0%, 17%);
     padding: 0px;
-    height: 95%;
+    height: 100%;
     display: grid;
     grid-template-rows: 1fr 7fr 1fr;
 }
@@ -64,8 +60,8 @@ body{
 
 #channelInfo{
     background-color: hsl(0,0%,20%);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
     padding:10px;
     font-size: 20px;
     display: flex;
@@ -80,7 +76,7 @@ body{
     margin-left: 10px;
     padding: 10px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 7px;
     background-color: hsl(0,0%,25%);
 }
 
@@ -99,44 +95,86 @@ body{
     display:grid;
     grid-template-columns: 3fr 1fr;
     background-color: hsl(0,0%,25%);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 #messageBoxInput{
+    transition: 0.2s;
+    font-size: 27px;
+    padding-left: 10px;
+    font-family: centuryGothic;
     background-color: hsl(0,0%,20%);
-    border-bottom-left-radius: 5px;
     box-shadow: none;
     border: none;
 }
 
 #messageBoxInput:hover{
+    transition: 0.2s;
     border: none;
     box-shadow: none;
 }
 
 #messageBoxInput:focus{
+    transition: 0.2s;
     border:none;
     box-shadow: none;
     outline: none;
 }
 
 #messageBoxButton{
-    background-color: hsl(0, 0%,25%);
-    border-bottom-right-radius: 5px;
+    font-size: 27px;
+    font-family: centuryGothic;
+    transition: 0.2s;
+    background-color: hsl(0, 0%,20%);
+    border-bottom-right-radius: 7px;
     box-shadow: none;
     border: none;
+}
+
+#messageBoxButton:hover{
+    transition: 0.2s;
+    background-color: hsl(0,0%,60%);
+}
+
+#messageBoxButton:active{
+    background-color: hsl(0,0%,90%);
 }
 
 .textBox{
     
     flex-grow: 0;
-    background-color: blue;
-    width: ;
+    background-color: hsl(0,0%,20%);
+    padding-top: 0 ;
+    border-radius: 7px;
+    border-bottom-left-radius: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: fit-content;
+}
+
+
+
+h3{
+
+    font-weight: 100;
+}
+
+.textBox *{
+
+    margin: 0;
+    margin-top: 1px;
+}
+
+.textBox p{
+    color: hsl(0,0%,50%);
 }
 
 #messages{
     display: flex;
-    flex-direction: column;
+    gap: 10px;
+    flex-direction: column-reverse;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
+
