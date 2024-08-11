@@ -15,7 +15,7 @@ function submitFunction(){
     liChild.appendChild(senderName)
     liChild.appendChild((senderMessage))
     liChild.classList.add('textBox')
-
+    liChild.classList.add('userMessages')
     document.getElementById('messages').appendChild(liChild)
 }
 
